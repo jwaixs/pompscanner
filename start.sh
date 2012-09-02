@@ -23,6 +23,9 @@ pypy ./pompscanner.py ./pomplogs/Broammeul2.txt.gz 1-1-2000 1-1-2013 3 ./pompout
 echo BuitenbrHt LT
 pypy ./pompscanner.py ./pomplogs/BuitenbrHt_LT.txt.gz 1-1-2000 1-1-2013 3,7 ./pompoutput/BuitenbrHt_LT_output.csv
 
+echo Debiet De Wulpen
+pypy ./pompscanner_debiet.py ./pomplogs/Debiet_De_Wulpen.txt.gz 1-1-2000 1-1-2013 2 ./pompoutput/Debiet_De_Wulpen.csv
+
 echo DeHeven
 pypy ./pompscanner.py ./pomplogs/DeHeven.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/DeHeven_output.csv
 
