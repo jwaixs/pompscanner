@@ -41,6 +41,12 @@ pypy ./pompscanner.py ./pomplogs/Eesveen1.txt.gz 1-1-2000 1-1-2013 3 ./pompoutpu
 echo Eesveen3
 pypy ./pompscanner.py ./pomplogs/Eesveen3.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Eesveen3_output.csv
 
+echo Eesveen3.1
+pypy ./pompscanner.py ./pomplogs/Eesveen3_1.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Eesveen3_1_output.csv
+
+echo Eesveen3.2
+pypy ./pompscanner.py ./pomplogs/Eesveen3_2.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Eesveen3_2.output.csv
+
 echo Gelderingen
 pypy ./pompscanner.py ./pomplogs/Gelderingen.txt.gz 1-1-2000 1-1-2013 3,5 ./pompoutput/Gelderingen_output.csv
 
@@ -57,7 +63,7 @@ echo Halfweg
 pypy ./pompscanner.py ./pomplogs/Halfweg.txt.gz 1-1-2000 1-1-2013 3,5 ./pompoutput/Halfweg_output.csv
 
 echo Leeuwterveld
-pypy ./pompscanner.py ./pomplogs/Leeuwterveld.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Leeuwterveld_output.csv
+pypy ./pompscanner.py ./pomplogs/Leeuwterveld.txt.gz 1-1-2000 1-1-2013 3,4 ./pompoutput/Leeuwterveld_output.csv
 
 echo MarkerTbroek
  pypy ./pompscanner.py ./pomplogs/MarkerTbroek.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/MarkerTbroek_output.csv
