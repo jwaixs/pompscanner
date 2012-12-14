@@ -1,6 +1,12 @@
 #!/bin/bash
 
+set -e
+rm ./pompoutput/*
+
 echo Loop door alle logfiles heen
+
+echo Auken
+pypy ./pompscanner.py ./pomplogs/Auken.txt.gz 1-1-2000 1-1-2013 3,4 ./pompoutput/Auken_output.csv
 
 echo Baarl NPolder Ht LT
 pypy ./pompscanner.py ./pomplogs/Baarl_NPolder_HT_LT.txt.gz 1-1-2000 1-1-2013 3,7 ./pompoutput/Baarl_NPolder_HT_LT_output.csv
@@ -35,6 +41,9 @@ pypy ./pompscanner.py ./pomplogs/deukten.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput
 echo Duinigermeerweg
 pypy ./pompscanner.py ./pomplogs/Duinigermeerweg.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Duinigermeerweg_output.csv
 
+echo Duinweg
+pypy ./pompscanner.py ./pomplogs/duinweg.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Duinwerg_output.csv
+
 echo Eesveen1
 pypy ./pompscanner.py ./pomplogs/Eesveen1.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Eesveen1_output.csv
 
@@ -66,7 +75,10 @@ echo Leeuwterveld
 pypy ./pompscanner.py ./pomplogs/Leeuwterveld.txt.gz 1-1-2000 1-1-2013 3,4 ./pompoutput/Leeuwterveld_output.csv
 
 echo MarkerTbroek
- pypy ./pompscanner.py ./pomplogs/MarkerTbroek.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/MarkerTbroek_output.csv
+pypy ./pompscanner.py ./pomplogs/MarkerTbroek.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/MarkerTbroek_output.csv
+
+echo Nijensleek
+pypy ./pompscanner.py ./pomplogs/NijensleekP1.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Nijensleek_output.csv
 
 echo Stroink
 pypy ./pompscanner.py ./pomplogs/Stroink.txt.gz 1-1-2000 1-1-2013 3,5,7 ./pompoutput/Stroink_output.csv
@@ -74,7 +86,11 @@ pypy ./pompscanner.py ./pomplogs/Stroink.txt.gz 1-1-2000 1-1-2013 3,5,7 ./pompou
 echo Tussen de Diepten
 pypy ./pompscanner.py ./pomplogs/Tussen_de_Diepten.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Tussen_de_Diepten_output.csv
 
+echo Veldweg
+pypy ./pompscanner.py ./pomplogs/Veldweg.txt.gz 1-1-2000 1-1-2013 ./pompoutput/Veldweg_output.csv
+
 echo Wetering
 pypy ./pompscanner.py ./pomplogs/wetering.txt.gz 1-1-2000 1-1-2013 3,4,6 ./pompoutput/wetering_output.csv
 
- 
+echo Zuidveen
+pypy ./pompscanner.py ./pomplogs/Zuidveen.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Zuidveen_output.csv
