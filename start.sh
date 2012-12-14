@@ -87,7 +87,7 @@ echo Tussen de Diepten
 pypy ./pompscanner.py ./pomplogs/Tussen_de_Diepten.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Tussen_de_Diepten_output.csv
 
 echo Veldweg
-pypy ./pompscanner.py ./pomplogs/Veldweg.txt.gz 1-1-2000 1-1-2013 ./pompoutput/Veldweg_output.csv
+pypy ./pompscanner.py ./pomplogs/Veldweg.txt.gz 1-1-2000 1-1-2013 3 ./pompoutput/Veldweg_output.csv
 
 echo Wetering
 pypy ./pompscanner.py ./pomplogs/wetering.txt.gz 1-1-2000 1-1-2013 3,4,6 ./pompoutput/wetering_output.csv
